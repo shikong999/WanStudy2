@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorGrey"
+    tools:context="com.university.wanstudy.user.VideoActivity">
+    <!--topBar-->
+    <com.university.wanstudy.view.TopBar
+        android:id="@+id/video_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <!--导航栏-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/video_tab"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorWhite"
+        app:tabIndicatorColor="@color/colorBlue"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorBlue"
+        app:tabTextColor="@color/colorBlack">
+
+    </android.support.design.widget.TabLayout>
+    <!--各个页面ViewPager-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/video_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

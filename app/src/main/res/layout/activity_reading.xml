@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical"
+    tools:context="com.university.wanstudy.user.ReadingActivity">
+    <!--topBar-->
+    <com.university.wanstudy.view.TopBar
+        android:id="@+id/reading_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/reading_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@mipmap/nodata_user_course"
+            android:layout_marginTop="30dp"
+            android:text="暂无订阅内容" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/reading_img"-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="130dp"-->
+            <!--android:layout_alignRight="@id/reading_info"-->
+            <!--android:layout_alignBaseline="@id/reading_info"-->
+            <!--android:src="@mipmap/nodata_user_course" />-->
+
+
+    </RelativeLayout>
+</LinearLayout>
